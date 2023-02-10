@@ -65,7 +65,8 @@
         <Editor HorizontalOptions="Fill" BackgroundColor="#512BD4"/>
 
         <Label Text="Password" FontSize="Medium"/>
-        <Editor HorizontalOptions="Fill" BackgroundColor="#512BD4"/>
+        <!-- <Editor HorizontalOptions="Fill" BackgroundColor="#512BD4"/> -->
+        <Entry IsPassword="true" />
 
         <Button Text="Masuk"
         ToolTipProperties.Text="Click to Save your data" />
