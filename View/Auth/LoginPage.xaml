@@ -5,7 +5,28 @@
              xmlns:local="clr-namespace:LoginPage"
              Shell.FlyoutBehavior="Disabled">
              
-             
+        <!-- <Border Grid.Row="1" WidthRequest="350" BackgroundColor="Transparent" Grid.Column="0" HorizontalOptions="Center"
+                   HeightRequest="400" StrokeShape="RoundRectangle" StrokeThickness="2" Padding="20"> -->
+
+
+          <!-- <Label Grid.Row="0" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" TranslationX="2" TranslationY="1">
+            <Label.FormattedText>
+               <FormattedString>
+                    <Span Text="FOOD " FontAttributes="Bold" FontSize="40" TextColor="#512BD4" FontFamily="OpenSansSemibold"/>
+                    <Span Text="DELIVERY" FontAttributes="Bold" FontSize="40" TextColor="#512BD4" FontFamily="OpenSansSemibold"/>
+                </FormattedString>
+            </Label.FormattedText>
+        </Label> -->
+        <!-- <Label Text="FOOD DELIVERY" Grid.Row="0" TextColor="#512BD4" FontFamily="OpenSansSemibold"
+               FontAttributes="Bold" FontSize="40" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/> -->
+        <!--<Frame CornerRadius="0" BackgroundColor="Transparent"
+               Grid.Row="1" VerticalOptions="CenterAndExpand"
+               Margin="0,0,40,0"
+               >-->
+            <!-- <Border Grid.Row="1" WidthRequest="350" BackgroundColor="Transparent" Grid.Column="0" HorizontalOptions="Center"
+                   HeightRequest="400" StrokeShape="RoundRectangle" StrokeThickness="2" Padding="20">            -->
+
+
         <VerticalStackLayout
             Spacing="25"
             Padding="30,0"
@@ -20,8 +41,7 @@
 
         <Label Text="“Bacalah Al Qur’an, karena ia akan datang pada hari kiamat sebagai syafa’at bagi shahibul Qur’an”" />    
 
-
-        <TabBar>
+        <!-- <TabBar>
         <ShellContent
             Title="Notes"
             Icon="{OnPlatform 'icon_notes.png', iOS='icon_notes_ios.png', MacCatalyst='icon_notes_ios.png'}" />
@@ -29,8 +49,7 @@
         <ShellContent
             Title="About"
             Icon="{OnPlatform 'icon_about.png', iOS='icon_about_ios.png', MacCatalyst='icon_about_ios.png'}" />
-         </TabBar>
-
+         </TabBar> -->
 
         <HorizontalStackLayout Spacing="10">
             <Image Source="programming-skills.svg"
@@ -39,11 +58,116 @@
             <!-- <Label FontSize="22" FontAttributes="Bold" Text="Notes" VerticalOptions="End" />
             <Label FontSize="22" Text="v1.0" VerticalOptions="End" /> -->
         </HorizontalStackLayout>
-
         
         <!-- <Button Text="Silahkan Click" Clicked="LearnMore_Clicked" />     -->
 
-        </VerticalStackLayout>                 
+        <Label Text="Email" FontSize="Medium" />
+        <Editor HorizontalOptions="Fill" BackgroundColor="#512BD4"/>
+
+        <Label Text="Password" FontSize="Medium"/>
+        <Editor HorizontalOptions="Fill" BackgroundColor="#512BD4"/>
+
+        <Button Text="Masuk"
+        ToolTipProperties.Text="Click to Save your data" />
+    
+
+         <!-- <Button Text="Click to Rotate Text!"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                Clicked="BtnLogin_Clicked" /> -->
+
+        <!-- <Label Text="SIGN IN" FontSize="28" FontAttributes="Bold" /> -->
+
+        <Label FontAttributes="Bold" Text="Forgot Password?" TextColor="Gray" HorizontalTextAlignment="Center" />
+
+        <Button Text="Daftar Sekarang"
+        ToolTipProperties.Text="Click to Save your data" />
+
+        <!-- <Label Text="Telefono" FontSize="Medium"/>
+        <Editor HorizontalOptions="Fill" BackgroundColor="#512BD4"/>
+
+        <Label Text="Edad" FontSize="Medium"/>
+         -->
+
+        <Label 
+               FontSize="80"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               BindingContext="{x:Reference Name=slider}"
+               Text="{Binding Path=Value,StringFormat='{0:N0}'}"/>
+
+        <Slider x:Name="slider"
+                Maximum="120"
+                Minimum="18"
+                VerticalOptions="Center" />
+
+        <Button Text="Guardar" Clicked="Button_Clicked"/>
+
+           <!-- <Editor x:Name="TituloEditor"
+                Placeholder="Titulo"
+                Text="{Binding Titulo}"
+                HeightRequest="50" />
+
+        <Editor x:Name="TextEditor"
+                Placeholder="Describe Tu Nota"
+                Text="{Binding Text}"
+                HeightRequest="100" /> -->
+
+        <!-- <Grid ColumnDefinitions="*,*" ColumnSpacing="4">
+            <Button Text="Grabar"
+                    Clicked="SaveButton_Clicked" />
+
+            <Button Grid.Column="1"
+                    Text="Eliminar"
+                    Clicked="DeleteButton_Clicked" />
+        </Grid> -->
+
+         <!-- <Label Text="FOOD DELIVERY" Grid.Row="0" TextColor="#512BD4" FontFamily="OpenSansSemibold"
+               FontAttributes="Bold" FontSize="40" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/> -->
+        <!--<Frame CornerRadius="0" BackgroundColor="Transparent"
+               Grid.Row="1" VerticalOptions="CenterAndExpand"
+               Margin="0,0,40,0"
+               >-->
+            <!-- <Border Grid.Row="1" WidthRequest="350" BackgroundColor="Transparent" Grid.Column="0" HorizontalOptions="Center"
+                   HeightRequest="400" StrokeShape="RoundRectangle" StrokeThickness="2" Padding="20">
+            <VerticalStackLayout  Spacing="25" VerticalOptions="CenterAndExpand" BackgroundColor="Transparent"> -->
+
+                <!--<Frame Padding="10" BorderColor="Transparent" CornerRadius="0" BackgroundColor="Transparent">-->
+                    <!-- <Grid ColumnDefinitions="25,*" ColumnSpacing="10">
+                        <Image VerticalOptions="Center" Source="email.png" HeightRequest="25" WidthRequest="25" />
+                        <Entry VerticalOptions="Center" Placeholder="Email" Grid.Column="1" FontSize="Medium"
+                               Text="{Binding Email}" HeightRequest="45" Keyboard="Email"/>
+                        <Label Text="*" TranslationY="5" TranslationX="25" TextColor="Red"/>
+                    </Grid> -->
+                <!--</Frame>-->
+
+                <!--<Frame Padding="10" BorderColor="Transparent" CornerRadius="0" BackgroundColor="Transparent">-->
+                    <!-- <Grid ColumnDefinitions="25,*" ColumnSpacing="10">
+                        <Image VerticalOptions="Center" Source="password.png" HeightRequest="25" WidthRequest="25" />
+                        <Entry VerticalOptions="Center" Placeholder="Password" IsPassword="True" Grid.Column="1"
+                                         HeightRequest="45" Text="{Binding Password}" FontSize="Medium" Keyboard="Default"/>
+                        <Label Text="*" TranslationY="5" TranslationX="25" TextColor="Red"/>
+                    </Grid> -->
+                <!--</Frame>-->
+
+                <!-- <Button CornerRadius="10" HeightRequest="50" Text="SIGN IN" FontSize="20" FontAttributes="Bold"
+                        Command="{Binding LoginCommand}" BackgroundColor="#512BD4" WidthRequest="150" TextColor="White"/> -->
+<!--Lest create borderless entry--> 
+
+                <!-- <HorizontalStackLayout HorizontalOptions="Center" Spacing="10">
+                    <Label  FontAttributes="Bold" TextColor="Gray" Text="Don't have account?" VerticalTextAlignment="Center" />
+                    <Label  Text="SIGN UP" FontSize="18" 
+                           FontAttributes="Bold"
+                           TextColor="#512BD4">
+
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding SignUpCommand}"/>
+                    </Label.GestureRecognizers>
+                    </Label>
+                </HorizontalStackLayout> -->
+
+        </VerticalStackLayout>   
+        <!-- </Border>               -->
              
 
 </ContentPage>

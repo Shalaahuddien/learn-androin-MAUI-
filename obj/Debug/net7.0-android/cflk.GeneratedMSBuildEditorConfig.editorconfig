@@ -49,3 +49,15 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = cflk.View.Auth.LoginPage.xaml
 build_metadata.AdditionalFiles.TargetPath = View/Auth/LoginPage.xaml
 build_metadata.AdditionalFiles.RelativePath = View/Auth/LoginPage.xaml
+
+[/home/daffa/cflk/View/Count/CountPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = cflk.View.Count.CountPage.xaml
+build_metadata.AdditionalFiles.TargetPath = View/Count/CountPage.xaml
+build_metadata.AdditionalFiles.RelativePath = View/Count/CountPage.xaml
+
+[/home/daffa/cflk/View/Kotak/KotakPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = cflk.View.Kotak.KotakPage.xaml
+build_metadata.AdditionalFiles.TargetPath = View/Kotak/KotakPage.xaml
+build_metadata.AdditionalFiles.RelativePath = View/Kotak/KotakPage.xaml

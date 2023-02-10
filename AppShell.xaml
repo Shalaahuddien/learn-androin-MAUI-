@@ -11,4 +11,9 @@
         ContentTemplate="{DataTemplate local:View.Auth.LoginPage}"
         Route="MainPage" />
 
+    <ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate local:View.Kotak.KotakPage}"
+        Route="MainPage" />    
+
 </Shell>

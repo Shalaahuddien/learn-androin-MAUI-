@@ -1,0 +1,30 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<ContentPage  xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              xmlns:local="clr-namespace:cflk"
+              x:Class="cflk.View.Kotak.KotakPage">
+    <AbsoluteLayout>
+      <!-- <Border Stroke="#C49B33"
+              StrokeThickness="4"
+              Background="#2B0B98"
+              Padding="16,8"
+              HorizontalOptions="Center"
+              WidthRequest="10"
+              HeightRequest="25"
+              > -->
+      <Label  x:Name="Kotak"
+              HorizontalOptions="Center"
+              BackgroundColor="#C92C6D"
+              AbsoluteLayout.LayoutBounds="0.5,0.5,110,25"
+              AbsoluteLayout.LayoutFlags="PositionProportional"
+            />
+      <!-- </Border> -->
+      <StackLayout  Orientation="Horizontal"
+                    HorizontalOptions="Center"
+                    Margin="5">
+        <Button x:Name="arrowLeft" Margin="5"/>
+        <Button x:Name="arrowRight" Margin="5"/>
+        <Button x:Name="Jump" Margin="5" Clicked="handleJump"/>
+      </StackLayout>
+    </AbsoluteLayout>
+</ContentPage>
